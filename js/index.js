@@ -41,7 +41,7 @@ $(function () {
             terrainProvider: Cesium.createWorldTerrain()
         });
         viewer.scene.globe.enableLighting = false;
-        viewer.scene.globe.depthTestAgainstTerrain = true;
+        viewer.scene.globe.depthTestAgainstTerrain = false;
         viewer.scene.globe.showGroundAtmosphere = false;
     }
 
