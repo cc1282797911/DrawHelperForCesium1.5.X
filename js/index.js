@@ -37,11 +37,11 @@ $(function () {
             navigationHelpButton: true,
             navigationInstructionsInitiallyVisible: false,
             mapProjection: new Cesium.WebMercatorProjection(),
-            imageryProvider: image_Source,
+            //imageryProvider: image_Source,
             terrainProvider: Cesium.createWorldTerrain()
         });
         viewer.scene.globe.enableLighting = false;
-        viewer.scene.globe.depthTestAgainstTerrain = false;
+        viewer.scene.globe.depthTestAgainstTerrain = true;
         viewer.scene.globe.showGroundAtmosphere = false;
     }
 
